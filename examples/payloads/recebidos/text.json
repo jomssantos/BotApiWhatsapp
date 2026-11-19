@@ -1,0 +1,43 @@
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "123456789012345",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15550000000",
+              "phone_number_id": "109876543210987"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Maria Exemplo"
+                },
+                "wa_id": "5511999999999",
+                "user_id": "BR.1234567890123456",
+                "country_code": "BR"
+              }
+            ],
+            "messages": [
+              {
+                "from": "5511999999999",
+                "from_user_id": "BR.1234567890123456",
+                "id": "wamid.EXEMPLO04AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+                "timestamp": "1760000000",
+                "text": {
+                  "body": "Oi, tudo bem?"
+                },
+                "from_logical_id": "123456789012345",
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}

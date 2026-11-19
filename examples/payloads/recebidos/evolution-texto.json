@@ -1,0 +1,17 @@
+{
+  "event": "messages.upsert",
+  "instance": "meu-bot-whatsapp",
+  "data": {
+    "key": {
+      "remoteJid": "5511999999999@s.whatsapp.net",
+      "fromMe": false,
+      "id": "EXEMPLO0000000000000000000000001"
+    },
+    "pushName": "Maria Exemplo",
+    "messageType": "conversation",
+    "message": {
+      "conversation": "Oi, tudo bem?"
+    },
+    "messageTimestamp": 1760000000
+  }
+}

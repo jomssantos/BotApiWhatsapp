@@ -1,0 +1,29 @@
+# só para PROVIDER=evolution: docker compose up -d
+services:
+  evolution-postgres:
+    image: postgres:15
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?defina no .env}
+      POSTGRES_DB: evolution
+    volumes:
+      - evolution-postgres-data:/var/lib/postgresql/data
+
+  evolution-api:
+    image: evoapicloud/evolution-api:v2.3.7
+    restart: unless-stopped
+    depends_on:
+      - evolution-postgres
+    environment:
+      AUTHENTICATION_API_KEY: ${AUTHENTICATION_API_KEY:?defina no .env}
+      DATABASE_ENABLED: ${DATABASE_ENABLED:-true}
+      DATABASE_PROVIDER: ${DATABASE_PROVIDER:-postgresql}
+      DATABASE_CONNECTION_URI: ${DATABASE_CONNECTION_URI:?defina no .env}
+      CACHE_REDIS_ENABLED: ${CACHE_REDIS_ENABLED:-false}
+      CACHE_LOCAL_ENABLED: ${CACHE_LOCAL_ENABLED:-true}
+    ports:
+      - "8080:8080"
+
+volumes:
+  evolution-postgres-data:

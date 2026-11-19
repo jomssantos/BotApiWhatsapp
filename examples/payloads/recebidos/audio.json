@@ -1,0 +1,48 @@
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "123456789012345",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15550000000",
+              "phone_number_id": "109876543210987"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Maria Exemplo"
+                },
+                "wa_id": "5511999999999",
+                "user_id": "BR.1234567890123456",
+                "country_code": "BR"
+              }
+            ],
+            "messages": [
+              {
+                "from": "5511999999999",
+                "from_user_id": "BR.1234567890123456",
+                "id": "wamid.EXEMPLO01AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+                "timestamp": "1760000000",
+                "from_logical_id": "123456789012345",
+                "type": "audio",
+                "audio": {
+                  "mime_type": "audio/ogg; codecs=opus",
+                  "sha256": "EXEMPLOsha256AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+                  "id": "100000000000001",
+                  "url": "https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=100000000000001&source=webhook&ext=EXEMPLO&hash=EXEMPLO",
+                  "static_url": "https://interncache.fbcdn.net/EXEMPLO",
+                  "voice": true
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
